@@ -7,9 +7,11 @@
 - **EntityManager** – Manages creation and deletion of entities
 - **Components** – Lightweight data containers
 - **Systems** – Behavior applied to matching entities
-
-## Current Systems
-- `PhysicsSystem` applies velocity to entities with a `VelocityComponent`.
+- 
+### Current Systems
+- `PhysicsSystem`: Applies velocity to entities with a `VelocityComponent`
+- `RenderSystem`: Renders static ASCII grid for entity positions
+- `EngineLogger`: Provides timestamped, stylized logs across all systems
 
 ## Planned
 - `RenderSystem`
