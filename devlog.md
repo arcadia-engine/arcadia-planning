@@ -70,5 +70,6 @@ Today marks the completion of our ECS-driven movement loop. The old imperative u
 - Draft out the `arcadia-core` package structure to support growth
 - Possibly create `EntityFactory` for clean game object creation
 
-Arcadia is no longer theoretical. It ticks, moves, and speaks in code.
+---
 
+> *"Arcadia is no longer theoretical. It ticks, moves, and speaks in code."*
