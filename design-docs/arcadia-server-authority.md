@@ -10,6 +10,6 @@ Arcadia is designed with a server-authoritative architecture to maintain game in
 - Manage login, persistence, and instances
 
 ## Tools
-- Java Sockets or Netty (TBD)
+- Java Sockets (starting point – abstracted to allow Netty swap-in)
 - Tick-based logic
 - Delta compression (future phase)
