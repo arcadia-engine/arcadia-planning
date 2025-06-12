@@ -13,3 +13,8 @@
 ## UI
 - Command palette like VSCode for dev commands
 - Right-click context menu for tiles/entities
+
+### Current Systems
+- `PhysicsSystem`: Applies velocity to entities with a `VelocityComponent`
+- `RenderSystem`: Renders static ASCII grid for entity positions
+- `EngineLogger`: Provides timestamped, stylized logs across all systems
