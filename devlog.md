@@ -38,6 +38,7 @@ Even if it ships with a single zone or single quest, it will be mine. And finish
 
 ## [#002] The Engine Breathes — Movement, Systems, and Logs
 🗓️ June 12, 2025
+👤 **Author**: @Hemerley  
 
 Arcadia Engine is no longer static.
 
