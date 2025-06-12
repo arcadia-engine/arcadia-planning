@@ -10,7 +10,3 @@ This repository holds planning materials for the Arcadia Engine project and its 
 - **reference-images/** – Mockups, diagrams, and UI sketches
 - **ideas-backlog.md** – Freeform idea capture and wishlist
 - **weekly-summary.md** – High-level overview of weekly accomplishments
-
-## ✅ Usage
-
-Use this repo as your command center for planning, tracking, and designing everything Arcadia-related. Keep it lean, clear, and continuously updated.
