@@ -6,7 +6,7 @@
 > Goal: A playable offline sandbox with real entity interaction and screen-based feedback.
 
 ### ✅ Milestone Goals
-- [ ] `CollisionSystem` for static object blocking  
+- ✅ `CollisionSystem` for static object blocking  
 - [ ] `HealthComponent` and damage model stub  
 - [ ] `UISystem` for HUD display (health, coords, FPS)  
 - [ ] `TileMapLoader` – ASCII tile map definition + parsing  
