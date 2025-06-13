@@ -1,69 +1,55 @@
-# 🛠️ Arcadia Engine Roadmap (v0.2–v0.5)
+# 🛣 Arcadia Engine Roadmap – v0.2
+
+> Target: Playable offline sandbox with real entity interaction, pluggable scenes, and map loading
 
 ---
 
-## 🔹 v0.2 – Demo Zone Foundations
-> Goal: A playable offline sandbox with real entity interaction and screen-based feedback.
+## 🧩 Runtime Architecture
 
-### ✅ Milestone Goals
-- ✅ `CollisionSystem` for static object blocking  
-- [ ] `HealthComponent` and damage model stub  
-- [ ] `UISystem` for HUD display (health, coords, FPS)  
-- [ ] `TileMapLoader` – ASCII tile map definition + parsing  
-- [ ] `InteractionSystem` (signs, doors, etc.)
-
-### 📅 Target Date
-**June 30, 2025**
-
-> Ends with a working single-player test zone, player + NPC interaction, and no network required.
+- [x] `ArcadiaApp` for developer-facing engine interface
+- [x] `Scene` interface for game state management
+- [x] Refactored `GameLoop` for injection-based lifecycle
+- [x] Modular demo using `DemoScene`
 
 ---
 
-## 🔹 v0.3 – Simulation Layer Maturity
-> Goal: Core mechanics like combat, inventory, and AI.
+## 🌍 World Simulation
 
-### ✅ Milestone Goals
-- [ ] `CombatSystem` (damage on proximity or input)  
-- [ ] `InventoryComponent` + sample `ItemComponent`  
-- [ ] `AIBrainSystem` (wander, chase, idle)  
-- [ ] `DeathSystem` (entity removal on 0 HP)  
-- [ ] `SaveSystem` (serialize entities to JSON)
-
-### 📅 Target Date
-**July 14, 2025**
-
-> Ends with a local dungeon-style test, inventory working, AI/NPC behaviors enabled.
+- [x] MapManager and Tile/TileType abstractions
+- [ ] Move map classes into `arcadia-core`
+- [ ] Implement `TileMapLoader` for ASCII or JSON maps
+- [ ] Add Viewport/Camera support for scrollable scenes
 
 ---
 
-## 🔹 v0.4 – Networking Alpha
-> Goal: Local server-client multiplayer simulation.
+## ⚙️ System Improvements
 
-### ✅ Milestone Goals
-- [ ] `ClientNetSystem` (send `InputIntentPacket`)  
-- [ ] `ServerNetSystem` (receive + apply, then sync position)  
-- [ ] `EntitySpawnPacket` + dynamic sync  
-- [ ] `StateSnapshotPacket` broadcasting loop  
-- [ ] Server-side `GameLoop` separation
-
-### 📅 Target Date
-**July 28, 2025**
-
-> Ends with player input over TCP + visible position sync between host and client.
+- [x] InputSystem and PhysicsSystem
+- [x] RenderSystem using layer + tile drawing
+- [ ] `SystemManager` for runtime-controlled system order and injection
+- [ ] Add `UISystem` for healthbars, messages, etc.
 
 ---
 
-## 🔹 v0.5 – World Server Demo
-> Goal: Simulated MMO backend slice with real-world updates and authority.
+## 🔄 Animation & Visual Feedback
 
-### ✅ Milestone Goals
-- [ ] Remote player entities with visible separation  
-- [ ] Server-authoritative spawns (e.g., monster AI)  
-- [ ] Entity UUID map and lifetime sync  
-- [ ] Server logs + profiling tools  
-- [ ] First full-stack play session (1v1 combat, sync + confirm)
+- [ ] Create `AnimationComponent` and `AnimationSystem`
+- [ ] Support sprite frame switching based on ticks or state
 
-### 📅 Target Date
-**August 11, 2025**
+---
 
-> Ends with your first working multiplayer “arena” experience and data-correct network sync.
+## 🌐 Networking Scaffold
+
+- [ ] Define `ArcadiaConnection` abstraction
+- [ ] Implement `ArcadiaClient` and `ArcadiaServer` shell classes
+- [ ] Plan sync message format and entity state flow
+
+---
+
+## 🎯 Goal Completion
+
+Ends with:
+- Fully functional demo scene
+- File-based maps
+- Entities reacting to player movement and physics
+- Ready to fork into client/server or world editor layers
